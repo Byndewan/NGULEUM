@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="icon" type="image/x-icon" href="/images/template/FAVICON-NGULEUM.png">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Store Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="css/colors.php?color=222222" type="text/css" /> <!-- Store Theme Color -->
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" /> <!-- Store Theme Font -->
+	<link rel="stylesheet" href="store.css" type="text/css" /> <!-- Store Theme Custom CSS -->
+	<!-- / -->
+
+	<!-- Document Title
+	============================================= -->
+	<title>NGULEUM</title>
+
+</head>
+
+<body class="stretched modal-subscribe-bottom">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Modal -->
+		<!-- <div class="modal animated fadeInUp fast pe-0" id="modal-subscribe" role="dialog" displayed="false" data-backdrop="static">
+
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<button type="button" class="btn btn-close btn-sm ms-auto p-2"  data-bs-dismiss="modal" aria-label="Close" aria-label="Close"></button>
+					<div class="modal-body">
+
+						<div class="form-widget mx-auto" data-loader="button" style="padding: 30px">
+
+							<h2 class="fw-bold h1 mb-3" style="letter-spacing: -2px">Dapatkan Diskon Spesial!</h2>
+							<p>Berlangganan Untuk Berita Atau Pemberitahuan Baru, Banyak Tawaran Menarik Dan Diskon Untuk Pembelian:</p>
+
+							<div class="form-result"></div>
+
+							<form class="mb-0" id="modal-subscribe-form" action="include/form.php" method="post" enctype="multipart/form-data">
+								<label for="modal-subscribe-form-email">Alamat Email <span>*</span></label>
+								<input type="email" name="modal-subscribe-form-email" id="modal-subscribe-form-email" class="form-control required rounded-0" placeholder="contoh@gmail.com">
+
+								<input class="d-none" type="text" id="modal-subscribe-form-botcheck" name="modal-subscribe-form-botcheck" value="" />
+								<button name="modal-subscribe-form-submit" class="button w-100 btn-danger m-0 mt-2" type="submit">Langganan Sekarang</button>
+
+								<input type="hidden" name="prefix" value="modal-subscribe-form-">
+							</form>
+							<div class="text-center">
+								<small class="text-black-50 mt-1"><em>Kami tidak mengirim SPAM ke Email Anda</em></small>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="dark transparent-header floating-header header-size-custom" data-sticky-shrink="false" data-sticky-class="not-dark">
+			<div id="header-wrap">
+				<div class="container-fluid">
+					<div class="header-row justify-content-lg-between">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo" class="me-lg-0">
+							<a href="index.html" class="standard-logo" data-dark-logo="images/template/NGULEUM.png"><img src="images/template/NGULEUM-DARK.png" alt="Canvas Logo"></a>
+							<a href="index.html" class="retina-logo" data-dark-logo="images/template/NGULEUM.png"><img src="images/template/NGULEUM-DARK.png" alt="Canvas Logo"></a>
+						</div>
+                        <!-- #logo end -->
+
+						<!-- <div class="header-misc"> -->
+
+							<!-- Top Login
+							============================================= -->
+							<!-- <div id="top-account" class="px-4">
+								<a href="#modal-register" data-lightbox="inline">Sign up/Login</a>
+							</div> -->
+                            <!-- #top-search end -->
+
+							<!-- Top Cart
+							============================================= -->
+							<!-- <div id="top-cart">
+								<a href="#" id="top-cart-trigger" class="position-relative"><i class="icon-line-bag"></i><span class="top-cart-number">5</span></a>
+								<div class="top-cart-content">
+									<div class="top-cart-title">
+										<h4>Shopping Cart</h4>
+									</div>
+									<div class="top-cart-items">
+										<div class="top-cart-item">
+											<div class="top-cart-item-image">
+												<a href="#"><img src="demos/shop/images/items/featured/5.jpg" alt="Blue Shoulder Bag" /></a>
+											</div>
+											<div class="top-cart-item-desc">
+												<div class="top-cart-item-desc-title">
+													<a href="#" class="fw-normal">White athletic shoe</a>
+													<span class="top-cart-item-price d-block">$35.00</span>
+												</div>
+												<div class="top-cart-item-quantity fw-semibold">x 1</div>
+											</div>
+										</div>
+										<div class="top-cart-item">
+											<div class="top-cart-item-image">
+												<a href="#" class="fw-normal"><img src="demos/shop/images/items/featured/1.jpg" alt="Leather Bag" /></a>
+											</div>
+											<div class="top-cart-item-desc">
+												<div class="top-cart-item-desc-title">
+													<a href="#" class="fw-normal">Round Neck Solid Light Blue Colour T-shirts</a>
+													<span class="top-cart-item-price d-block">$12.49</span>
+												</div>
+												<div class="top-cart-item-quantity fw-semibold">x 2</div>
+											</div>
+										</div>
+									</div>
+									<div class="top-cart-action">
+										<span class="top-checkout-price fw-semibold text-dark">$59.98</span>
+										<button class="button button-dark button-small m-0">View Cart</button>
+									</div>
+								</div>
+							</div> -->
+                            <!-- #top-cart end -->
+						<!-- </div> -->
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu with-arrows">
+
+							<!-- Menu Left -->
+							<ul class="not-dark menu-container">
+								<li class="menu-item current"><a class="menu-link" href="#"><div>Beranda</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="#"><div>Tentang Kami</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="#template"><div>Template</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="#"><div>Kontak</div></a></li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="header-wrap-clone"></div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element swiper_wrapper min-vh-100" data-loop="true" data-speed="1000" data-autoplay="5000">
+			<div class="slider-inner">
+
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide dark">
+							<div class="container">
+								<div class="slider-caption">
+									<h2 data-animate="fadeInUp">Premium Classic Template</h2>
+									<p class="mb-4" data-animate="fadeInUp" data-delay="100">Koleksi Baru Musim Panas 2019.</p>
+									<div>
+										<a href="#" data-animate="fadeInUp" data-delay="200" class="button button-large button-white button-light">Lihat Produk</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide-bg" style="background-image: url('images/template/TEMPLATE.jpg');"></div>
+						</div>
+                        
+						<div class="swiper-slide dark">
+							<div class="container">
+								<div class="slider-caption">
+									<h2 data-animate="fadeInUp">Terbaru! Classic Reguler Template</h2>
+									<p class="mb-4" data-animate="fadeInUp" data-delay="100">Koleksi Regular Terbaru Kami Saat ini.</p>
+									<div>
+										<a href="demo-store-products.html" data-animate="fadeInUp" data-delay="200" class="button button-large button-white button-light">Lihat Produk</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide-bg" style="background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)), url('images/template/TEMPLATE-2.jpg');"></div>
+						</div>
+
+						<div class="swiper-slide dark">
+							<div class="container">
+								<div class="slider-caption">
+									<h2 data-animate="fadeInUp">Berbagai Macam Koleksi Template</h2>
+									<p class="mb-4" data-animate="fadeInUp" data-delay="100">Ada Banyak Sekali Template Yang Bisa Di Pakai.</p>
+									<div>
+										<a href="demo-store-products.html" data-animate="fadeInUp" data-delay="200" class="button button-large button-white button-light">Lihat Koleksi Sekarang</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide-bg" style="background-image: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.3)), url('images/template/TEMPLATE-3.jpg');"></div>
+						</div>
+
+					</div>
+					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+					<div class="slide-number"><div class="slide-number-current"></div><span>/</span><div class="slide-number-total"></div></div>
+				</div>
+
+				<div class="social-icons">
+					<a href="#" class="social-icon si-small si-borderless si-rounded si-facebook">
+						<i class="icon-facebook text-white-50"></i>
+						<i class="icon-facebook"></i>
+					</a>
+					<a href="#" class="social-icon si-small si-borderless si-rounded si-instagram">
+						<i class="icon-instagram text-white-50"></i>
+						<i class="icon-instagram"></i>
+					</a>
+					<a href="#" class="social-icon si-small si-borderless si-rounded si-youtube">
+						<i class="icon-youtube text-white-50"></i>
+						<i class="icon-youtube"></i>
+					</a>
+				</div>
+
+			</div>
+		</section><!-- #Slider End -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap pb-0">
+
+				<!-- Login/Register Modal -->
+				<!-- <div class="modal-register mfp-hide" id="modal-register">
+					<div class="card mx-auto" style="max-width: 540px;">
+						<div class="card-header py-3 bg-transparent center">
+							<h3 class="mb-0 fw-normal">Hello, Welcome Back</h3>
+						</div>
+						<div class="card-body mx-auto py-5" style="max-width: 70%;">
+
+							<a href="#" class="button button-large w-100 si-colored si-facebook nott fw-normal ls0 center m-0"><i class="icon-facebook-sign"></i> Log in with Facebook</a>
+
+							<div class="divider divider-center"><span class="position-relative" style="top: -2px">OR</span></div>
+
+							<form id="login-form" name="login-form" class="mb-0 row" action="#" method="post">
+
+								<div class="col-12">
+									<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control not-dark" placeholder="Username" />
+								</div>
+
+								<div class="col-12 mt-4">
+									<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control not-dark" placeholder="Password" />
+								</div>
+
+								<div class="col-12 text-end">
+									<a href="#" class="text-dark fw-light mt-2">Forgot Password?</a>
+								</div>
+
+								<div class="col-12 mt-4">
+									<button class="button w-100 m-0" id="login-form-submit" name="login-form-submit" value="login">Login</button>
+								</div>
+							</form>
+						</div>
+						<div class="card-footer py-4 center">
+							<p class="mb-0">Don't have an account? <a href="#"><u>Sign up</u></a></p>
+						</div>
+					</div>
+				</div> -->
+
+				<div class="container-fluid">
+					<div class="mx-auto center bottommargin" style="max-width: 700px">
+						<h2>Tentang Kami</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur repudiandae nobis earum voluptate id adipisci nostrum mollitia, ipsam, asperiores, soluta dolorem facere exercitationem laborum. Magni mollitia laudantium vel tempore.</p>
+					</div>
+				</div>
+
+				<div class="container-fluid">
+					<div class="row mt-2">
+						<div class="col-md-4 mb-5">
+							<div class="card cat-card rounded-0 border-0 dark">
+								<img src="images/Category/1.png" class="card-img rounded-0" alt="...">
+								<div class="d-flex align-items-start flex-column card-img-overlay p-4">
+									<h3 class="h3 text-white ls--1 fw-bold mt-2 mb-auto">Diskon 50%</h3>
+									<h3 class="h2 text-white ls--1 fw-bold mb-4">Regular</h3>
+									<p>Category Regular Menyediakan Template Standar Dengan Desain & Fitur Yang Tidak Kalah Menarik....</p>
+									<a href="#" class="button button button-white button-light ms-0">Lihat Koleksi</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-5">
+							<div class="card cat-card rounded-0 border-0 dark">
+								<img src="images/Category/2.png" class="card-img rounded-0" alt="...">
+								<div class="d-flex align-items-start flex-column card-img-overlay bg p-4">
+									<h3 class="h3 text-white ls--1 fw-bold mt-2 mb-auto">Diskon 10%</h3>
+									<h3 class="h2 text-white ls--1 fw-bold mb-4">Premium</h3>
+									<p>Category Regular Menyediakan Template Premium Dengan Desain & Fitur Yang Elegan....</p>
+									<a href="#" class="button button button-white button-light ms-0">Lihat Koleksi</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mb-5">
+							<div class="card cat-card rounded-0 border-0 dark">
+								<img src="images/Category/3.png" class="card-img rounded-0" alt="...">
+								<div class="d-flex align-items-start flex-column card-img-overlay bg p-4">
+									<h3 class="h3 text-white ls--1 fw-bold mt-2 mb-auto">Tawaran Baru</h3>
+									<h3 class="h2 text-white ls--1 fw-bold mb-4">Acara Lain Selain Pernikahan?</h3>
+									<p>Ada Acara Lain Selain Pernikahan? Tenang Kita Bisa Buatkan Dari Acara Ulang Tahun Anak Sampai Acara-Acara Besar....</p>
+									<a href="#" class="button button button-white button-light ms-0">Buat Sekarang</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+				<div class="container-fluid topmargin" id="template">
+					<div class="row">
+						<div class="col-md-2 sticky-sidebar-wrap">
+							<ul class="list-unstyled items-nav sticky-sidebar">
+								<li><a href="#" class="text-dark fw-semibold filter-link" data-filter="all">Semua Koleksi</a></li>
+								<li class="no-divider"><a href="#" class="text-dark fw-semibold filter-link" data-filter="new">Koleksi Terbaru</a></li>
+								<li><hr></li>
+								<li><a href="#" class="filter-link" data-filter="premium">Premuim</a></li>
+								<li><a href="#" class="filter-link" data-filter="regular">Regular</a></li>
+								<li><a href="#" class="filter-link" data-filter="custom">Regular</a></li>
+								<li><a href="#" class="filter-link" data-filter="wedding">Pernikahan</a></li>
+								<li><a href="#" class="filter-link" data-filter="birthday">Pesta Ulang Tahun</a></li>
+								<li><a href="#" class="filter-link" data-filter="party">Pesta Besar</a></li>
+								<li><a href="#" class="filter-link" data-filter="circumcision">Khitanan</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-10">
+							<div class="row">
+
+								<!-- Shop Item 1 Premium
+								============================================= -->
+								<div class="col-lg-4 col-md-6 mb-4 product-item" data-category="premium wedding">
+									<div class="product">
+										<div class="product-image position-relative">
+											<div class="fslider" data-pagi="false" data-speed="400" data-pause="200000">
+												<div class="flexslider">
+													<div class="slider-wrap">
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot-3.jpg" alt="Black Shoe"></a>
+														</div>
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot.jpg" alt="Black Shoe"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://diki-dan-marisya.appepos.com" class="cart-btn button button-white button-light"><i class="icon-line-arrow-up"></i>Lihat Contoh</a>
+										</div>
+										<div class="product-desc m-0 pb-0  d-flex align-items-center justify-content-around m-0 p-0">
+												<div style="margin-right: 60px;">
+													<div class="bg-primary badge badge-success text-white mb-2">Premium</div>
+													<h4 class="mb-2">Koleksi Premium 001</h4>
+													<hr class="m-0">
+												</div>
+												<div class="btn btn-primary fw-bold m-0 m-auto mt-3 p-2" style="font-size: small;">
+													<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Web%20Tema%3A%20*Koleksi%20Premium001*%20Masa%20Tayang%3A%20*6%20Bulan*%20Bonus%3A%20%E2%80%94%20Harga%3A%20*Rp%20150.000*%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka%20Terima%20kasih!" target="_blank" class="text-white"><i class="icon-whatsapp"></i> Mau Ini</a>
+												</div>
+										</div>
+										<!-- <hr class="mb-0"> -->
+									</div>
+								</div>
+								
+								<!-- Shop Item 2 Premium
+								============================================= -->
+								<div class="col-lg-4 col-md-6 mb-4 product-item" data-category="premium wedding">
+									<div class="product">
+										<div class="product-image position-relative">
+											<div class="fslider" data-pagi="false" data-speed="400" data-pause="200000">
+												<div class="flexslider">
+													<div class="slider-wrap">
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot.jpg" alt="Black Shoe"></a>
+														</div>
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot-3.jpg" alt="Black Shoe"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://diki-dan-marisya.appepos.com" class="cart-btn button button-white button-light"><i class="icon-line-arrow-up"></i>Lihat Contoh</a>
+										</div>
+										<div class="product-desc m-0 pb-0  d-flex align-items-center justify-content-around m-0 p-0">
+												<div style="margin-right: 60px;">
+													<div class="bg-primary badge badge-success text-white mb-2">Premium</div>
+													<h4 class="mb-2">Koleksi Premium 002</h4>
+													<hr class="m-0">
+												</div>
+												<div class="btn btn-primary fw-bold m-0 m-auto mt-3 p-2" style="font-size: small;">
+													<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Web%20Tema%3A%20*Koleksi%20Premium002*%20Masa%20Tayang%3A%20*6%20Bulan*%20Bonus%3A%20%E2%80%94%20Harga%3A%20*Rp%20150.000*%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka%20Terima%20kasih!" target="_blank" class="text-white"><i class="icon-whatsapp"></i> Mau Ini</a>
+												</div>
+										</div>
+										<!-- <hr class="mb-0"> -->
+									</div>
+								</div>
+
+								<!-- Shop Item 3 Premium
+								============================================= -->
+								<div class="col-lg-4 col-md-6 mb-4 product-item" data-category="premium wedding">
+									<div class="product">
+										<div class="product-image position-relative">
+											<div class="fslider" data-pagi="false" data-speed="400" data-pause="200000">
+												<div class="flexslider">
+													<div class="slider-wrap">
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot-1.jpg" alt="Black Shoe"></a>
+														</div>
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot.jpg" alt="Black Shoe"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://diki-dan-marisya.appepos.com" class="cart-btn button button-white button-light"><i class="icon-line-arrow-up"></i>Lihat Contoh</a>
+										</div>
+										<div class="product-desc m-0 pb-0  d-flex align-items-center justify-content-around m-0 p-0">
+												<div style="margin-right: 60px;">
+													<div class="bg-primary badge badge-success text-white mb-2">Premium</div>
+													<h4 class="mb-2">Koleksi Premium 003</h4>
+													<hr class="m-0">
+												</div>
+												<div class="btn btn-primary fw-bold m-0 m-auto mt-3 p-2" style="font-size: small;">
+													<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Web%20Tema%3A%20*Koleksi%20Premium003*%20Masa%20Tayang%3A%20*6%20Bulan*%20Bonus%3A%20%E2%80%94%20Harga%3A%20*Rp%20150.000*%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka%20Terima%20kasih!" target="_blank" class="text-white"><i class="icon-whatsapp"></i> Mau Ini</a>
+												</div>
+										</div>
+										<!-- <hr class="mb-0"> -->
+									</div>
+								</div>
+
+								<!-- Shop Item 1 Regular
+								============================================= -->
+								<div class="col-lg-4 col-md-6 mb-4 product-item" data-category="regular wedding">
+									<div class="product">
+										<div class="product-image position-relative">
+											<div class="fslider" data-pagi="false" data-speed="400" data-pause="200000">
+												<div class="flexslider">
+													<div class="slider-wrap">
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot-3.jpg" alt="Black Shoe"></a>
+														</div>
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot.jpg" alt="Black Shoe"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://diki-dan-marisya.appepos.com" class="cart-btn button button-white button-light"><i class="icon-line-arrow-up"></i>Lihat Contoh</a>
+										</div>
+										<div class="product-desc m-0 pb-0  d-flex align-items-center justify-content-around m-0 p-0">
+												<div style="margin-right: 60px;">
+													<div class="bg-secondary badge badge-secondary text-white mb-2">Regular</div>
+													<h4 class="mb-2">Koleksi Regular 001</h4>
+													<hr class="m-0">
+												</div>
+												<div class="btn btn-secondary fw-bold m-0 m-auto mt-3 p-2" style="font-size: small;">
+													<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Web%20Tema%3A%20*Koleksi%20Regular001*%20Masa%20Tayang%3A%20*6%20Bulan*%20Bonus%3A%20%E2%80%94%20Harga%3A%20*Rp%20150.000*%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka%20Terima%20kasih!" target="_blank" class="text-white"><i class="icon-whatsapp"></i> Mau Ini</a>
+												</div>
+										</div>
+										<!-- <hr class="mb-0"> -->
+									</div>
+								</div>
+
+								<!-- Shop Item 2 Regular
+								============================================= -->
+								<div class="col-lg-4 col-md-6 mb-4 product-item" data-category="regular wedding">
+									<div class="product">
+										<div class="product-image position-relative">
+											<div class="fslider" data-pagi="false" data-speed="400" data-pause="200000">
+												<div class="flexslider">
+													<div class="slider-wrap">
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot.jpg" alt="Black Shoe"></a>
+														</div>
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot-3.jpg" alt="Black Shoe"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://diki-dan-marisya.appepos.com" class="cart-btn button button-white button-light"><i class="icon-line-arrow-up"></i>Lihat Contoh</a>
+										</div>
+										<div class="product-desc m-0 pb-0  d-flex align-items-center justify-content-around m-0 p-0">
+												<div style="margin-right: 60px;">
+													<div class="bg-secondary badge badge-secondary text-white mb-2">Regular</div>
+													<h4 class="mb-2">Koleksi Regular 002</h4>
+													<hr class="m-0">
+												</div>
+												<div class="btn btn-secondary fw-bold m-0 m-auto mt-3 p-2" style="font-size: small;">
+													<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Web%20Tema%3A%20*Koleksi%20Regular002*%20Masa%20Tayang%3A%20*6%20Bulan*%20Bonus%3A%20%E2%80%94%20Harga%3A%20*Rp%20150.000*%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka%20Terima%20kasih!" target="_blank" class="text-white"><i class="icon-whatsapp"></i> Mau Ini</a>
+												</div>
+										</div>
+										<!-- <hr class="mb-0"> -->
+									</div>
+								</div>
+
+								<!-- Shop Item 3 Regular
+								============================================= -->
+								<div class="col-lg-4 col-md-6 mb-4 product-item" data-category="regular wedding">
+									<div class="product">
+										<div class="product-image position-relative">
+											<div class="fslider" data-pagi="false" data-speed="400" data-pause="200000">
+												<div class="flexslider">
+													<div class="slider-wrap">
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot-1.jpg" alt="Black Shoe"></a>
+														</div>
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot.jpg" alt="Black Shoe"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://diki-dan-marisya.appepos.com" class="cart-btn button button-white button-light"><i class="icon-line-arrow-up"></i>Lihat Contoh</a>
+										</div>
+										<div class="product-desc m-0 pb-0  d-flex align-items-center justify-content-around m-0 p-0">
+												<div style="margin-right: 60px;">
+													<div class="bg-secondary badge badge-secondary text-white mb-2">Regular</div>
+													<h4 class="mb-2">Koleksi Regular 003</h4>
+													<hr class="m-0">
+												</div>
+												<div class="btn btn-secondary fw-bold m-0 m-auto mt-3 p-2" style="font-size: small;">
+													<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Web%20Tema%3A%20*Koleksi%20Regular003*%20Masa%20Tayang%3A%20*6%20Bulan*%20Bonus%3A%20%E2%80%94%20Harga%3A%20*Rp%20150.000*%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka%20Terima%20kasih!" target="_blank" class="text-white"><i class="icon-whatsapp"></i> Mau Ini</a>
+												</div>
+										</div>
+										<!-- <hr class="mb-0"> -->
+									</div>
+								</div>
+
+								<!-- Shop Item 1 Custom
+								============================================= -->
+								<div class="col-lg-4 col-md-6 mb-4 product-item" data-category="custom circumcision">
+									<div class="product">
+										<div class="product-image position-relative">
+											<div class="fslider" data-pagi="false" data-speed="400" data-pause="200000">
+												<div class="flexslider">
+													<div class="slider-wrap">
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot.jpg" alt="Black Shoe"></a>
+														</div>
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot-3.jpg" alt="Black Shoe"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://diki-dan-marisya.appepos.com" class="cart-btn button button-white button-light"><i class="icon-line-arrow-up"></i>Lihat Contoh</a>
+										</div>
+										<div class="product-desc m-0 pb-0  d-flex align-items-center justify-content-around m-0 p-0">
+												<div style="margin-right: 60px;">
+													<div class="bg-info badge badge-info text-white mb-2">Custom</div>
+													<h4 class="mb-2">Koleksi Custom 001</h4>
+													<hr class="m-0">
+												</div>
+												<div class="btn btn-info fw-bold m-0 m-auto mt-3 p-2" style="font-size: small;">
+													<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Web%20Tema%3A%20*Koleksi%20Custom001*%20Masa%20Tayang%3A%20*6%20Bulan*%20Bonus%3A%20%E2%80%94%20Harga%3A%20*Rp%20150.000*%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka%20Terima%20kasih!" target="_blank" class="text-white"><i class="icon-whatsapp"></i> Mau Ini</a>
+												</div>
+										</div>
+										<!-- <hr class="mb-0"> -->
+									</div>
+								</div>
+
+								<!-- Shop Item 2 Custom
+								============================================= -->
+								<div class="col-lg-4 col-md-6 mb-4 product-item" data-category="custom circumcision">
+									<div class="product">
+										<div class="product-image position-relative">
+											<div class="fslider" data-pagi="false" data-speed="400" data-pause="200000">
+												<div class="flexslider">
+													<div class="slider-wrap">
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot-3.jpg" alt="Black Shoe"></a>
+														</div>
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot.jpg" alt="Black Shoe"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://diki-dan-marisya.appepos.com" class="cart-btn button button-white button-light"><i class="icon-line-arrow-up"></i>Lihat Contoh</a>
+										</div>
+										<div class="product-desc m-0 pb-0  d-flex align-items-center justify-content-around m-0 p-0">
+												<div style="margin-right: 60px;">
+													<div class="bg-info badge badge-info text-white mb-2">Custom</div>
+													<h4 class="mb-2">Koleksi Custom 002</h4>
+													<hr class="m-0">
+												</div>
+												<div class="btn btn-info fw-bold m-0 m-auto mt-3 p-2" style="font-size: small;">
+													<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Web%20Tema%3A%20*Koleksi%20Custom002*%20Masa%20Tayang%3A%20*6%20Bulan*%20Bonus%3A%20%E2%80%94%20Harga%3A%20*Rp%20150.000*%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka%20Terima%20kasih!" target="_blank" class="text-white"><i class="icon-whatsapp"></i> Mau Ini</a>
+												</div>
+										</div>
+										<!-- <hr class="mb-0"> -->
+									</div>
+								</div>
+
+								<!-- Shop Item 3 Custom
+								============================================= -->
+								<div class="col-lg-4 col-md-6 mb-4 product-item" data-category="custom circumcision">
+									<div class="product">
+										<div class="product-image position-relative">
+											<div class="fslider" data-pagi="false" data-speed="400" data-pause="200000">
+												<div class="flexslider">
+													<div class="slider-wrap">
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot-1.jpg" alt="Black Shoe"></a>
+														</div>
+														<div class="slide">
+															<a href="https://diki-dan-marisya.appepos.com"><img src="images/template/screenshoot.jpg" alt="Black Shoe"></a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<a href="https://diki-dan-marisya.appepos.com" class="cart-btn button button-white button-light"><i class="icon-line-arrow-up"></i>Lihat Contoh</a>
+										</div>
+										<div class="product-desc m-0 pb-0  d-flex align-items-center justify-content-around m-0 p-0">
+												<div style="margin-right: 60px;">
+													<div class="bg-info badge badge-info text-white mb-2">Custom</div>
+													<h4 class="mb-2">Koleksi Custom 003</h4>
+													<hr class="m-0">
+												</div>
+												<div class="btn btn-info fw-bold m-0 m-auto mt-3 p-2" style="font-size: small;">
+													<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Web%20Tema%3A%20*Koleksi%20Custom003*%20Masa%20Tayang%3A%20*6%20Bulan*%20Bonus%3A%20%E2%80%94%20Harga%3A%20*Rp%20150.000*%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka%20Terima%20kasih!" target="_blank" class="text-white"><i class="icon-whatsapp"></i> Mau Ini</a>
+												</div>
+										</div>
+										<!-- <hr class="mb-0"> -->
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script>
+					document.addEventListener('DOMContentLoaded', function() {
+					const filterLinks = document.querySelectorAll('.filter-link');
+					
+					filterLinks.forEach(link => {
+						link.addEventListener('click', function(e) {
+						e.preventDefault();
+						
+						filterLinks.forEach(l => l.classList.remove('active'));
+						
+						this.classList.add('active');
+						
+						const filterValue = this.getAttribute('data-filter');
+						const productItems = document.querySelectorAll('.product-item');
+						
+						productItems.forEach(item => {
+							if (filterValue === 'all') {
+							item.style.display = 'block';
+							} else {
+							const categories = item.getAttribute('data-category').split(' ');
+							if (categories.includes(filterValue)) {
+								item.style.display = 'block';
+							} else {
+								item.style.display = 'none';
+							}
+							}
+						});
+						});
+					});
+					});
+				</script>
+
+				<style>
+					.filter-link.active {
+					font-weight: bold;
+					color: #1ABC9C!important;
+					}
+				</style>
+
+				<div class="section m-0 border-0" style="padding: 120px 0;">
+					<div class="video-wrap" style="z-index: 0">
+						<video poster="one-page/images/page/portrait/video-poster.jpg" preload="auto" loop autoplay muted>
+							<source src='one-page/images/page/portrait/video.mp4' type='video/mp4' />
+						</video>
+						<div class="video-overlay" style="background: rgba(0,0,0,0.2)"></div>
+					</div>
+					<div class="emphasis-title widget subscribe-widget mx-auto center px-4" data-loader="button" style="max-width: 650px">
+						<h2 class="fw-bold text-white">Berlangganan Sekarang!</h2>
+						<p class="mb-5 text-white-50 lead" data-delay="100">Berlangganan Untuk Berita Atau Pemberitahuan Baru, Banyak Tawaran Menarik Dan Diskon Untuk Pembelian:</p>
+						<div class="widget-subscribe-form-result"></div>
+						<form id="widget-subscribe-form-2" action="include/subscribe.php" method="post" class="mt-1 input-group input-group-lg mb-0">
+							<input type="email" id="widget-subscribe-form-2-email" name="widget-subscribe-form-email" class="form-control required email rounded-0 border-0" placeholder="Masukan Email Anda">
+
+							<button class="btn btn-dark bg-color rounded-0 text-uppercase fw-bold" type="submit" style="font-size: 16px">Berlangganan</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="section mt-0 mb-0" style="padding: 80px 0">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<h4 class="text-uppercase">Undangan Digital Praktis</h4>
+								<p>Bagikan undangan hanya dengan tautan. Hemat waktu, hemat biaya, dan ramah lingkungan!</p>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<h4 class="text-uppercase">Desain Elegan & Bisa Dicustom</h4>
+								<p class="h6 fw-bold">Within 30 days Guarantee</p>
+								<p>Pilih dari berbagai template menarik, atau sesuaikan sendiri desain undanganmu sesuai tema acara!</p>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<h4 class="text-uppercase">Fitur RSVP & Buku Tamu</h4>
+								<p>Tamu bisa langsung konfirmasi kehadiran dan meninggalkan ucapan — semua dalam satu tempat.</p>
+								<abbr title="Phone Number"><strong>Telepon:</strong></abbr> (+62) 821 1720 0692<br>
+								<abbr title="Email Address"><strong>Email:</strong></abbr> nguleum@gmail.com<br>
+
+								<a href="#" class="social-icon si-small si-light si-rounded si-facebook mt-4 me-2">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+								<a href="#" class="social-icon si-small si-light si-rounded si-instagram mt-4 me-2">
+									<i class="icon-instagram"></i>
+									<i class="icon-instagram"></i>
+								</a>
+								<a href="#" class="social-icon si-small si-light si-rounded si-youtube mt-4 me-2">
+									<i class="icon-youtube"></i>
+									<i class="icon-youtube"></i>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<h4 class="text-uppercase">Hubungi Kami</h4>
+									<address>
+										<strong>Kantor Pusat:</strong><br>
+										Jl. Ciwastra No. 08, Ciwastra<br>
+										Bandung, Indonesia 19047<br>
+									</address>
+
+									<address class="mb-3">
+										<strong>Customer Support:</strong><br>
+										Email: nguleum@gmail.com<br>
+										WhatsApp: +62 821 1720 0692<br>
+									</address>
+								<abbr title="Time"><strong>Waktu Buka:</strong></abbr> Setiap Hari: 07.00 – 19.00<br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section bg-transparent py-3">
+					<div class="container-fluid">
+						<div class="row justify-content-center m-auto" style="max-width: 1000px;">
+							<div class="col-md-7">
+								<p class="h6 mb-0 text-muted">Gak perlu cetak, gak perlu antar. Kirim undangan digital ke semua tamu, langsung dari hape kamu! <a href="mailto:nguleum@gmail.com"><u>nguleum@gmail.com</u></a></p>
+							</div>
+							<div class="col-md-5 mt-3 mt-md-0">
+								<h2 class="h1 fw-bold ls--1 color"><a href="tel:09876543211">(+62) 821 1720 0692</a></h2>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="bg-color dark border-0">
+
+			<div class="container-fluid">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap pb-5">
+
+					<div class="row">
+
+						<div class="col-lg-3 col-md-12 col-6">
+							<div class="widget">
+
+								<h4 class="ls0 mb-3 nott">Fitur</h4>
+
+								<ul class="list-unstyled iconlist ms-0">
+									<li><a href="#">Pusat Bantuan</a></li>
+									<li><a href="#">Bayar Lewat Hp</a></li>
+									<li><a href="#">Status</a></li>
+									<li><a href="#">Riwayat Perubahan</a></li>
+									<li><a href="#">Kontak Bantuan</a></li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-12 col-6">
+							<div class="widget">
+
+								<h4 class="ls0 mb-3 nott">Bantuan</h4>
+
+								<ul class="list-unstyled iconlist ms-0">
+									<li><a href="#">Beranda</a></li>
+									<li><a href="#">Tentang Kami</a></li>
+									<li><a href="#">Template</a></li>
+									<li><a href="#">Kontak</a></li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-12 col-6">
+							<div class="widget">
+
+								<h4 class="ls0 mb-3 nott">Pusat Bantuan</h4>
+
+								<ul class="list-unstyled iconlist ms-0">
+									<li><a href="#">Bandung</a></li>
+									<li><a href="#">Jakarta</a></li>
+									<li><a href="#">Bali</a></li>
+									<li><a href="#">Padang</a></li>
+									<li><a href="#">Pontianak</a></li>
+								</ul>
+
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-12 col-6">
+							<div class="widget">
+
+								<h4 class="ls0 mb-3 nott">Bantuan</h4>
+
+								<ul class="list-unstyled iconlist ms-0">
+									<li><a href="#">Beranda</a></li>
+									<li><a href="#">Tentang Kami</a></li>
+									<li><a href="#">Template</a></li>
+									<li><a href="#">Kontak</a></li>
+								</ul>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container-fluid clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							&copy; 2025 Seluruh Hak Cipta Dilindungi. Dibuat dengan ❤️ Di Support Oleh UPORPL.<br>
+							<div class="copyright-links"><a href="#">Syarat Penggunaan</a> / <a href="#">Privasi</a></div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<ul class="list-unstyled d-flex flex-row mb-2 clearfix">
+								<li class="me-2"><img src="images/xmas/images/cards/visa.svg" alt="Visa" width="34"></li>
+								<li class="me-2"><img src="images/xmas/images/cards/mc.svg" alt="Master Card" width="34"></li>
+								<li class="me-2"><img src="images/xmas/images/cards/ae.svg" alt="American Express" width="34"></li>
+								<li class="me-2"><img src="images/xmas/images/cards/pp.svg" alt="PayPal" width="34"></li>
+								<li class="me-2"><img src="images/xmas/images/cards/sk.svg" alt="Skrill" width="34"></li>
+								<li class="me-2"><img src="images/xmas/images/cards/2co.svg" alt="2CheckOut" width="34"></li>
+								<li class="me-2"><img src="images/xmas/images/cards/wu.svg" alt="Western Union" width="34"></li>
+							</ul>
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="#">Tentang Kami</a>/<a href="#">Fitur</a>/<a href="#">Template</a>/<a href="#">Kontak</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		$(document).ready(changeHeaderColor);
+		$(window).on('resize',changeHeaderColor);
+
+		function changeHeaderColor(){
+			if (jQuery(window).width() > 991.98) {
+				jQuery( "#header" ).hover(
+					function() {
+						if (!$(this).hasClass("sticky-header")) {
+							$( this ).addClass( "hover-light" ).removeClass( "dark" );
+							SEMICOLON.header.logo();
+						}
+						$( "#wrapper" ).addClass( "header-overlay" );
+					}, function() {
+						if (!$(this).hasClass("sticky-header")) {
+							$( this ).removeClass( "hover-light" ).addClass( "dark" );
+							SEMICOLON.header.logo();
+						}
+						$( "#wrapper" ).removeClass( "header-overlay" );
+					}
+				);
+			}
+		};
+
+		$(window).scroll(function() {
+			if ($(document).scrollTop() > 2000 && $("#modal-subscribe").attr("displayed") === "false") {
+				$('#modal-subscribe').modal('show');
+				$("#modal-subscribe").attr("displayed", "true");
+			}
+		});
+
+		jQuery('#modal-subscribe-form').on( 'formSubmitSuccess', function(){
+			$("#modal-subscribe").addClass("fadeOutDown");
+			setTimeout(function() { $('#modal-subscribe').modal('hide'); }, 400);
+			$("#modal-subscribe").attr("displayed", "false");
+		});
+
+		document.addEventListener('DOMContentLoaded', function() {
+			// Select all links with hashes
+			const links = document.querySelectorAll('a[href*="#"]');
+			
+			// Add click event listeners
+			links.forEach(link => {
+				link.addEventListener('click', function(e) {
+				// Skip if the link doesn't actually link to an ID
+				if (this.getAttribute('href') === '#') return;
+				
+				// Prevent default anchor click behavior
+				e.preventDefault();
+				
+				// Get the target element
+				const targetId = this.getAttribute('href');
+				const targetElement = document.querySelector(targetId);
+				
+				if (targetElement) {
+					// Calculate the target position
+					const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+					const startPosition = window.pageYOffset;
+					const distance = targetPosition - startPosition;
+					const duration = 800; // Animation duration in ms
+					let startTime = null;
+					
+					// Animation function
+					function animation(currentTime) {
+					if (startTime === null) startTime = currentTime;
+					const timeElapsed = currentTime - startTime;
+					const run = ease(timeElapsed, startPosition, distance, duration);
+					window.scrollTo(0, run);
+					if (timeElapsed < duration) requestAnimationFrame(animation);
+					}
+					
+					// Easing function for smooth effect
+					function ease(t, b, c, d) {
+					t /= d/2;
+					if (t < 1) return c/2*t*t*t + b;
+					t -= 2;
+					return c/2*(t*t*t + 2) + b;
+					}
+					
+					// Start the animation
+					requestAnimationFrame(animation);
+				}
+				});
+			});
+		});
+
+	</script>
+
+</body>
+</html>
