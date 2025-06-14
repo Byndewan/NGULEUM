@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding Of Diki Alfougan & Tia Marisya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+    --primary-color: #8e6c88;
+    --secondary-color: #f8f9fa;
+    --accent-color: #e83e8c;
+    --text-color: #333;
+    --light-text: #6c757d;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: #fff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(21, 151, 125, 0.95);
+    color: #fff!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #fff;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #fff!important;
+}
+
+.nav-link:hover {
+    color: #bbbbbb;
+}
+
+.nav-link:hover:after,
+.nav-link.active:after {
+    width: 100%;
+    color: #ff0000;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/detailTemplate/Hero.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.title span {
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+.btn-scroll-down {
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}
+
+/* Countdown */
+.countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.countdown-item {
+    text-align: center;
+    min-width: 80px;
+}
+
+.countdown-item span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    color: white;
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    margin-bottom: 2rem;
+}
+
+/* Couple Section */
+.couple-section {
+    /* background-color: var(--secondary-color); */
+    background: url('images/detailTemplate/Couple.png');
+}
+
+.person {
+    padding: 20px;
+}
+
+.person img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.heart-icon {
+    color: var(--accent-color);
+    font-size: 10rem!important;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Events Section */
+.events-section {
+    background-color: white;
+}
+
+.event-card {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-icon {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: white;
+}
+
+.event-date, .event-time {
+    font-weight: 500;
+}
+
+.event-location {
+    margin: 1.5rem 0;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: var(--secondary-color);
+}
+
+.gallery-img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* RSVP Section */
+.rsvp-section {
+    background-color: white;
+}
+
+#rsvpForm {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control, .form-select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(142, 108, 136, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 10px 30px;
+}
+
+.btn-primary:hover {
+    background-color: #7a5b74;
+    border-color: #7a5b74;
+}
+
+.btn-outline-light:hover {
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .countdown-item {
+        min-width: 70px;
+    }
+    
+    .countdown-item span {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .person img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .heart-icon {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+}
+
+.event-details {
+    color: #000;
+}
+
+iframe {
+    width: -webkit-fill-available;
+    height: revert-layer;
+}
+
+.guest-form input,
+.guest-form select {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.btn-outline-dark {
+    border-radius: 0;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">D & T</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#couple">Pasangan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Acara</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#guest-book">Buku Tamu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h4 class="subtitle">The Wedding Of</h4>
+                    <h1 class="title">Diki Alfougan <span>&</span> Tia Marisya</h1>
+                    <div id="countdown" class="countdown mt-4">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <div class="countdown-label">Hari</div>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <div class="countdown-label">Jam</div>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <div class="countdown-label">Menit</div>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <div class="countdown-label">Detik</div>
+                        </div>
+                    </div>
+                    <a href="#couple" class="btn-scroll-down">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Couple Section -->
+    <section id="couple" class="couple-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">The Happy Couple</h2>
+                    <p class="section-subtitle">Two souls, one heart</p>
+                    
+                    <div class="couple-container mt-5">
+                        <div class="row align-items-center">
+                            <div class="col-md-5">
+                                <div class="person groom">
+                                    <img src="images/shop/tshirts/1.jpg" alt="Bride" class="img-fluid rounded-circle">
+                                    <h3 class="mt-4">Diki Alfougan</h3>
+                                    <p>Son of Mr. & Mrs. Alfougan</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="heart-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="person bride">
+                                    <img src="images/shop/dress/1.jpg" alt="Groom" class="img-fluid rounded-circle">
+                                    <h3 class="mt-4">Tia Marisya</h3>
+                                    <p>Daughter of Mr. & Mrs. Marisya</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title mb-4" style="font-family: 'Playfair Display', serif; color: #333;">Save The Date</h2>
+                    
+                    <!-- Akad Nikah Card -->
+                    <div class="event-card text-center mb-5 p-4" style="background-color: white; border-left: 4px solid #15977D;">
+                        <h3 style="font-family: 'Playfair Display', serif; color: #333; font-size: 1.5rem;">Akad Nikah</h3>
+                        <div class="event-details mt-3" style="font-family: 'Open Sans', sans-serif;">
+                            <p class="mb-1"><strong>Ongo Sisan</strong></p>
+                            <p class="mb-1">El-Surdu 21 December 2024</p>
+                            <p class="mb-0 font-italic">Bertompet di</p>
+                            <p class="font-italic">Rostrum Bundesberry Gluturi</p>
+                        </div>
+                    </div>
+
+                    <!-- Research Bankbookery -->
+                    <div class="research-box p-4 mb-5 text-left" style="background-color: white; border-left: 4px solid #15977D;">
+                        <h4 class="mb-3" style="font-family: 'Playfair Display', serif; color: #333;">Research Bankbookery</h4>
+                        <ol style="font-family: 'Open Sans', sans-serif; padding-left: 1rem;">
+                            <li class="mb-2">Dags, Candy, Janssack, USA</li>
+                            <li class="mb-2">Alarm </li>
+                            <li class="mb-2">AIR 6476</li>
+                            <li class="mb-2">AIR 6478 + 2,000 kilometer</li>
+                            <li>Labs para kebab humor</li>
+                        </ol>
+                    </div>
+
+                    <!-- Resepsi Card -->
+                    <div class="event-card text-center mb-5 p-4" style="background-color: white; border-left: 4px solid #15977D;">
+                        <h3 style="font-family: 'Playfair Display', serif; color: #333; font-size: 1.5rem;">Resepsi</h3>
+                        <div class="event-details mt-3" style="font-family: 'Open Sans', sans-serif;">
+                            <p class="mb-1"><strong>Ouro Sisan</strong></p>
+                            <p class="mb-1">El-Surdu 21 December 2024</p>
+                            <p class="mb-0 font-italic">Bertompet di</p>
+                            <p class="font-italic">Rostrum Bundesberry Gluturi</p>
+                        </div>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="features-box mb-5 p-4 text-left" style="background-color: white; border-left: 4px solid #15977D;">
+                        <h4 class="mb-3" style="font-family: 'Playfair Display', serif; color: #333;">Features: Lakasa Uh</h4>
+                        <ul style="font-family: 'Open Sans', sans-serif; list-style-type: none; padding-left: 0;">
+                            <li class="mb-1">- Vila veriz</li>
+                            <li class="mb-1">- Pekk Bansberry Cuckley</li>
+                            <li class="mb-1">- Rostrum Bundesberry</li>
+                            <li class="mb-1">- Kjell Pike</li>
+                            <li class="mb-1">- Vila Veriz</li>
+                            <li class="mb-1">- Toba gumbaba TVA</li>
+                            <li class="mb-1">- Personalized | Bus per ESSE | Personen | Logistics/leaders per</li>
+                        </ul>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="event-card text-center p-4" style="background-color: white; border-left: 4px solid #15977D;">
+                        <h3 style="font-family: 'Playfair Display', serif; color: #333; font-size: 1.5rem;">Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81775.9427979045!2d107.60195797133258!3d-6.903362472288969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e1!3m2!1sid!2sid!4v1748850690409!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="py-5" style="background-color: white;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4" style="font-family: 'Playfair Display', serif; color: #333;">Our Stories</h2>
+                    <div class="story-content text-left" style="font-family: 'Open Sans', sans-serif; color: #555; line-height: 1.6;">
+                        <p>Kisah yang terjalin di tahun 2022 bulan agustus. Kisah yang kami kira hanya akan menjadi kisah sesaat,dari pertemanan ternyata menjadi kisah bahagia hingga saat ini.</p>
+
+                        <p>Bertemu dan mengenal satu sama lain dalam perjalanan yang tidak mudah, namun kami yakini, kami dipertemukan dengan sebuah tujuan. Hingga pada akhirnya, kami memutuskan untuk melanjutkan hubungan ini menuju jenjang pernikahan.</p>
+
+                        <p>Semoga jalan yang kami pilih menjadi pintu kebahagiaan yang tak pernah berujung dengan limpahan karunia dan keberkahan yang diberikan oleh Allah SWT. Aamin Ya Rabbal Alamin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title">Our Gallery</h2>
+                    <p class="section-subtitle">Memories of our journey together</p>
+                    
+                    <div class="gallery-grid mt-5">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <img src="images/parallax/home/1.jpg" alt="Gallery 1" class="img-fluid gallery-img">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="images/parallax/home/2.jpg" alt="Gallery 2" class="img-fluid gallery-img">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="images/parallax/home/4.jpg" alt="Gallery 3" class="img-fluid gallery-img">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="images/parallax/home/5.jpg" alt="Gallery 4" class="img-fluid gallery-img">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="images/parallax/home/6.jpg" alt="Gallery 5" class="img-fluid gallery-img">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <img src="images/parallax/home/7.jpg" alt="Gallery 6" class="img-fluid gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Book Section -->
+    <section id="guest-book" class="guest-book-section py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title text-center mb-4" style="font-family: 'Playfair Display', serif; color: #333;">Buku Tamu & Ucapan</h2>
+                    
+                    <div class="intro-text text-center mb-5">
+                        <p style="font-family: 'Open Sans', sans-serif; font-weight: 600;">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.</p>
+                    </div>
+
+                    <div class="guest-form mb-5 p-4" style="background-color: white; border-left: 4px solid #15977D;">
+                        <h3 class="mb-4" style="font-family: 'Playfair Display', serif; color: #333; font-size: 1.3rem;">Nama</h3>
+                        <form id="guestForm">
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Jumlah Orang" style="font-family: 'Open Sans', sans-serif;">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <select class="form-select" style="font-family: 'Open Sans', sans-serif;">
+                                        <option value="1" selected>Hadir</option>
+                                        <option value="2">Tidak Hadir</option>
+                                        <option value="3">Belum Tentu</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                 <textarea name="" class="form-control mb-4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-dark" style="font-family: 'Open Sans', sans-serif;">Submit</button>
+                        </form>
+                    </div>
+
+                    <!-- <div class="wishes-header mb-3">
+                        <h3 style="font-family: 'Playfair Display', serif; color: #333; font-size: 1.3rem;">Kırmı Ucapan</h3>
+                    </div> -->
+
+                    <div class="wishes-list">
+                        <h3 class="mb-4" style="font-family: 'Playfair Display', serif; color: #333; font-weight: bold;">Daftar Ucapan</h3>
+                        <hr>
+                        
+                        <!-- Wish 1 -->
+                        <div class="wish-item mb-4 p-3" style="background-color: white; border-left: 4px solid #15977D;">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0" style="font-family: 'Playfair Display', serif; color: #333;">Mahesa Agree</h4>
+                            </div>
+                            <p class="mb-0" style="font-family: 'Open Sans', sans-serif;">Sakinah mawadah wa uh ah</p>
+                        </div>
+                        
+                        <!-- Wish 2 -->
+                        <div class="wish-item mb-4 p-3" style="background-color: white; border-left: 4px solid #15977D;">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0" style="font-family: 'Playfair Display', serif; color: #333;">Suhela</h4>
+                            </div>
+                            <p class="mb-0" style="font-family: 'Open Sans', sans-serif;">Lancar sampai hari h dikii💐</p>
+                        </div>
+                        
+                        <!-- Wish 3 -->
+                        <div class="wish-item mb-4 p-3" style="background-color: white; border-left: 4px solid #15977D;">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0" style="font-family: 'Playfair Display', serif; color: #333;">andrea</h4>
+                            </div>
+                            <p class="mb-0" style="font-family: 'Open Sans', sans-serif;">Alhamdulillah lancar terus awet sampai tua tia🤲🏻</p>
+                        </div>
+                        
+                        <!-- Wish 4 -->
+                        <div class="wish-item mb-4 p-3" style="background-color: white; border-left: 4px solid #15977D;">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0" style="font-family: 'Playfair Display', serif; color: #333;">Onya</h4>
+                            </div>
+                            <p class="mb-0" style="font-family: 'Open Sans', sans-serif;">Masyallah barakallah tiaa geliss lancar samapai hari h samawa till jannah🥰💗🕊️</p>
+                        </div>
+                        
+                        <!-- Wish 5 -->
+                        <div class="wish-item mb-4 p-3" style="background-color: white; border-left: 4px solid #15977D;">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0" style="font-family: 'Playfair Display', serif; color: #333;">İkhisatı IP</h4>
+                            </div>
+                            <p class="mb-0" style="font-family: 'Open Sans', sans-serif;">Selamat menikah bro bro. Semoga cinta dan kebahagiaan selalu menyertai setiap langkah kalian</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-2">Thank you for being part of our special day</p>
+            <p>Diki Alfougan & Tia Marisya</p>
+            <div class="social-icons mt-3">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Countdown Timer
+            function updateCountdown() {
+                const weddingDate = new Date('2025-06-05T09:00:00').getTime();
+                const now = new Date().getTime();
+                const distance = weddingDate - now;
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = Math.floor(seconds).toString().padStart(2, '0');
+            }
+            
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+            
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        const navbarCollapse = document.querySelector('.navbar-collapse');
+                        if (navbarCollapse.classList.contains('show')) {
+                            navbarCollapse.classList.remove('show');
+                        }
+                    }
+                });
+            });
+            
+            // RSVP Form Submission
+            const rsvpForm = document.getElementById('rsvpForm');
+            if (rsvpForm) {
+                rsvpForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your RSVP! We look forward to seeing you.');
+                    rsvpForm.reset();
+                });
+            }
+            
+            // Gallery Image Click (would open in a lightbox in a real implementation)
+            const galleryImages = document.querySelectorAll('.gallery-img');
+            galleryImages.forEach(img => {
+                img.addEventListener('click', function() {
+                    // In a real implementation, this would open a lightbox
+                    console.log('Opening image in lightbox');
+                });
+            });
+            
+            // Activate scrollspy
+            const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+                target: '#navbar'
+            });
+        });
+    </script>
+</body>
+</html>

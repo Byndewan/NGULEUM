@@ -8,7 +8,7 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet" type="text/css" />
-	<link rel="icon" type="image/x-icon" href="/images/template/FAVICON-NGULEUM.png">
+	<link rel="icon" type="image/x-icon" href="images/Favicon.png">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
@@ -75,7 +75,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header floating-header header-size-custom" data-sticky-shrink="false" data-sticky-class="not-dark">
+		<header id="header" class="transparent-header floating-header header-size-custom d-none d-md-block" data-sticky-shrink="false" data-sticky-class="not-dark">
 			<div id="header-wrap">
 				<div class="container-fluid">
 					<div class="header-row justify-content-lg-between">
@@ -151,9 +151,9 @@
 							<!-- Menu Left -->
 							<ul class="not-dark menu-container">
 								<li class="menu-item current"><a class="menu-link" href="#"><div>Beranda</div></a></li>
-								<li class="menu-item current"><a class="menu-link" href="#"><div>Tentang Kami</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="#about"><div>Tentang Kami</div></a></li>
 								<li class="menu-item current"><a class="menu-link" href="#template"><div>Template</div></a></li>
-								<li class="menu-item current"><a class="menu-link" href="#"><div>Kontak</div></a></li>
+								<li class="menu-item current"><a class="menu-link" href="#contact"><div>Kontak</div></a></li>
 							</ul>
 
 						</nav><!-- #primary-menu end -->
@@ -165,7 +165,8 @@
 			</div>
 			<div class="header-wrap-clone"></div>
 
-		</header><!-- #header end -->
+		</header>
+		<!-- #header end -->
 
 		<!-- Slider
 		============================================= -->
@@ -181,11 +182,11 @@
 									<h2 data-animate="fadeInUp">Premium Classic Template</h2>
 									<p class="mb-4" data-animate="fadeInUp" data-delay="100">Koleksi Baru Musim Panas 2019.</p>
 									<div>
-										<a href="#" data-animate="fadeInUp" data-delay="200" class="button button-large button-white button-light">Lihat Produk</a>
+										<a href="#template" data-animate="fadeInUp" data-delay="200" class="button button-large button-white button-light">Lihat Produk</a>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide-bg" style="background-image: url('images/template/TEMPLATE.jpg');"></div>
+							<div class="swiper-slide-bg" style="background-image: url('images/template/TEMPLATE-BG-1.jpg');"></div>
 						</div>
                         
 						<div class="swiper-slide dark">
@@ -194,11 +195,11 @@
 									<h2 data-animate="fadeInUp">Terbaru! Classic Reguler Template</h2>
 									<p class="mb-4" data-animate="fadeInUp" data-delay="100">Koleksi Regular Terbaru Kami Saat ini.</p>
 									<div>
-										<a href="demo-store-products.html" data-animate="fadeInUp" data-delay="200" class="button button-large button-white button-light">Lihat Produk</a>
+										<a href="#template" data-animate="fadeInUp" data-delay="200" class="button button-large button-white button-light">Lihat Produk</a>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide-bg" style="background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)), url('images/template/TEMPLATE-2.jpg');"></div>
+							<div class="swiper-slide-bg" style="background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)), url('images/template/TEMPLATE-BG-2.jpg');"></div>
 						</div>
 
 						<div class="swiper-slide dark">
@@ -207,11 +208,11 @@
 									<h2 data-animate="fadeInUp">Berbagai Macam Koleksi Template</h2>
 									<p class="mb-4" data-animate="fadeInUp" data-delay="100">Ada Banyak Sekali Template Yang Bisa Di Pakai.</p>
 									<div>
-										<a href="demo-store-products.html" data-animate="fadeInUp" data-delay="200" class="button button-large button-white button-light">Lihat Koleksi Sekarang</a>
+										<a href="#template" data-animate="fadeInUp" data-delay="200" class="button button-large button-white button-light">Lihat Koleksi Sekarang</a>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide-bg" style="background-image: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.3)), url('images/template/TEMPLATE-3.jpg');"></div>
+							<div class="swiper-slide-bg" style="background-image: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.3)), url('images/template/TEMPLATE-BG-3.jpg');"></div>
 						</div>
 
 					</div>
@@ -280,7 +281,7 @@
 					</div>
 				</div> -->
 
-				<div class="container-fluid">
+				<div class="container-fluid" id="about">
 					<div class="mx-auto center bottommargin" style="max-width: 700px">
 						<h2>Tentang Kami</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur repudiandae nobis earum voluptate id adipisci nostrum mollitia, ipsam, asperiores, soluta dolorem facere exercitationem laborum. Magni mollitia laudantium vel tempore.</p>
@@ -296,7 +297,7 @@
 									<h3 class="h3 text-white ls--1 fw-bold mt-2 mb-auto">Diskon 50%</h3>
 									<h3 class="h2 text-white ls--1 fw-bold mb-4">Regular</h3>
 									<p>Category Regular Menyediakan Template Standar Dengan Desain & Fitur Yang Tidak Kalah Menarik....</p>
-									<a href="#" class="button button button-white button-light ms-0">Lihat Koleksi</a>
+									<a href="#template" class="button button button-white button-light ms-0">Lihat Koleksi</a>
 								</div>
 							</div>
 						</div>
@@ -307,7 +308,7 @@
 									<h3 class="h3 text-white ls--1 fw-bold mt-2 mb-auto">Diskon 10%</h3>
 									<h3 class="h2 text-white ls--1 fw-bold mb-4">Premium</h3>
 									<p>Category Regular Menyediakan Template Premium Dengan Desain & Fitur Yang Elegan....</p>
-									<a href="#" class="button button button-white button-light ms-0">Lihat Koleksi</a>
+									<a href="#template" class="button button button-white button-light ms-0">Lihat Koleksi</a>
 								</div>
 							</div>
 						</div>
@@ -318,7 +319,7 @@
 									<h3 class="h3 text-white ls--1 fw-bold mt-2 mb-auto">Tawaran Baru</h3>
 									<h3 class="h2 text-white ls--1 fw-bold mb-4">Acara Lain Selain Pernikahan?</h3>
 									<p>Ada Acara Lain Selain Pernikahan? Tenang Kita Bisa Buatkan Dari Acara Ulang Tahun Anak Sampai Acara-Acara Besar....</p>
-									<a href="#" class="button button button-white button-light ms-0">Buat Sekarang</a>
+									<a href="#template" class="button button button-white button-light ms-0">Order Sekarang</a>
 								</div>
 							</div>
 						</div>
@@ -331,74 +332,74 @@
 					<div class="row">
 						<!-- Sidebar Filters -->
 						<div class="col-md-3 col-lg-2 mb-4">
-						<div class="card border-0 shadow-sm">
-							<div class="card-body p-3">
-							<h5 class="mb-3 fw-semibold text-dark">Filter Koleksi</h5>
-							<ul class="nav flex-column filter-nav">
-								<li class="nav-item mb-2">
-								<a class="nav-link filter-link active" href="#" data-filter="all">Semua Koleksi</a>
-								</li>
-								<li class="nav-item mb-2">
-								<a class="nav-link filter-link" href="#" data-filter="new">Koleksi Terbaru</a>
-								</li>
-								<li class="nav-item my-3">
-								<hr class="my-1">
-								</li>
-								<li class="nav-item mb-2">
-								<a class="nav-link filter-link" href="#" data-filter="premium">
-									<span class="badge bg-primary me-2"></span>Premium
-								</a>
-								</li>
-								<li class="nav-item mb-2">
-								<a class="nav-link filter-link" href="#" data-filter="regular">
-									<span class="badge bg-secondary me-2"></span>Regular
-								</a>
-								</li>
-								<li class="nav-item mb-2">
-								<a class="nav-link filter-link" href="#" data-filter="custom">
-									<span class="badge bg-info me-2"></span>Custom
-								</a>
-								</li>
-								<li class="nav-item my-3">
-								<hr class="my-1">
-								</li>
-								<li class="nav-item mb-2">
-								<a class="nav-link filter-link" href="#" data-filter="wedding">
-									<i class="bi bi-heart me-2"></i>Pernikahan
-								</a>
-								</li>
-								<li class="nav-item mb-2">
-								<a class="nav-link filter-link" href="#" data-filter="birthday">
-									<i class="bi bi-gift me-2"></i>Ulang Tahun
-								</a>
-								</li>
-								<li class="nav-item mb-2">
-								<a class="nav-link filter-link" href="#" data-filter="party">
-									<i class="bi bi-balloon me-2"></i>Pesta Besar
-								</a>
-								</li>
-								<li class="nav-item">
-								<a class="nav-link filter-link" href="#" data-filter="circumcision">
-									<i class="bi bi-scissors me-2"></i>Khitanan
-								</a>
-								</li>
-							</ul>
+							<div class="card border-0 shadow-sm">
+								<div class="card-body p-3">
+								<h5 class="mb-3 fw-semibold text-dark">Filter Koleksi</h5>
+								<ul class="nav flex-column filter-nav">
+									<li class="nav-item mb-2">
+									<a class="nav-link filter-link active" href="#" data-filter="all">Semua Koleksi</a>
+									</li>
+									<li class="nav-item mb-2">
+									<a class="nav-link filter-link" href="#" data-filter="new">Koleksi Terbaru</a>
+									</li>
+									<li class="nav-item my-3">
+									<hr class="my-1">
+									</li>
+									<li class="nav-item mb-2">
+									<a class="nav-link filter-link" href="#" data-filter="premium">
+										<span class="badge bg-primary me-2"></span>Premium
+									</a>
+									</li>
+									<li class="nav-item mb-2">
+									<a class="nav-link filter-link" href="#" data-filter="regular">
+										<span class="badge bg-secondary me-2"></span>Regular
+									</a>
+									</li>
+									<li class="nav-item mb-2">
+									<a class="nav-link filter-link" href="#" data-filter="custom">
+										<span class="badge bg-info me-2"></span>Custom
+									</a>
+									</li>
+									<li class="nav-item my-3">
+									<hr class="my-1">
+									</li>
+									<li class="nav-item mb-2">
+									<a class="nav-link filter-link" href="#" data-filter="wedding">
+										<i class="bi bi-heart me-2"></i>Pernikahan
+									</a>
+									<!-- </li>
+									<li class="nav-item mb-2">
+									<a class="nav-link filter-link" href="#" data-filter="birthday">
+										<i class="bi bi-gift me-2"></i>Ulang Tahun
+									</a>
+									</li>
+									<li class="nav-item mb-2">
+									<a class="nav-link filter-link" href="#" data-filter="party">
+										<i class="bi bi-balloon me-2"></i>Pesta Besar
+									</a>
+									</li>
+									<li class="nav-item">
+									<a class="nav-link filter-link" href="#" data-filter="circumcision">
+										<i class="bi bi-scissors me-2"></i>Khitanan
+									</a> -->
+									</li>
+								</ul>
+								</div>
 							</div>
-						</div>
 						</div>
 
 						<!-- Product Grid -->
 						<div class="col-md-9 col-lg-10">
 						<div class="row g-4">
 							<!-- Product Item 1 - Premium Wedding -->
-							<div class="col-xl-4 col-md-6 product-item" data-category="premium wedding">
+							<div class="col-xl-4 col-md-6 product-item" data-category="premium wedding new">
 							<div class="card h-100 border-0 shadow-sm overflow-hidden">
 								<div class="position-relative">
-								<div class="product-image-slider ratio ratio-4x3">
-									<img src="images/template/screenshoot-3.jpg" class="img-fluid" alt="Premium Design 1">
-									<img src="images/template/screenshoot.jpg" class="img-fluid" alt="Premium Design 1">
+								<div class="product-image-slider ratio ratio-1x1">
+									<img src="/images/template/template-1.jpg" class="img-fluid" alt="Premium Design 1">
+									<img src="/images/template/template-1.jpg" class="img-fluid" alt="Premium Design 1">
 								</div>
-								<a href="detail-undangan.html" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
+								<a href="/theme/Template-1/index.html" target="_blank" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
 									<i class="bi bi-arrows-angle-expand"></i> Preview
 								</a>
 								</div>
@@ -408,23 +409,23 @@
 									<span class="text-muted small border-bottom">Pernikahan</span>
 								</div>
 								<h5 class="card-title mb-3">Koleksi Premium 001</h5>
-								<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dengan%20Koleksi%20Premium%20001" 
-									class="btn btn-primary w-100" target="_blank">
-									<i class="bi bi-whatsapp"></i> Pesan Sekarang
+								<a href="https://wa.me/6282117200692?text=UNTUK%20PEMESANAN%20GUNAKAN%20FORMAT%20DI%20BAWAH%20INI%21%0AHalo%20admin%2C%20saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Digital%20Dengan%20Tema%3A%20Koleksi%20Premium%20001%20Masa%20Tayang%3A%206%20Bulan.%20Harga%3A%20Rp150.000%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami.%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka.%20Terima%20kasih%21" 
+								class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center" target="_blank rel="noopener">
+								<i class="icon-whatsapp" style="margin-right: 5px!important;"></i> Pesan Sekarang
 								</a>
 								</div>
 							</div>
 							</div>
 
 							<!-- Product Item 2 - Premium Wedding -->
-							<div class="col-xl-4 col-md-6 product-item" data-category="premium wedding">
+							<div class="col-xl-4 col-md-6 product-item" data-category="premium wedding new">
 							<div class="card h-100 border-0 shadow-sm overflow-hidden">
 								<div class="position-relative">
-								<div class="product-image-slider ratio ratio-4x3">
-									<img src="images/template/screenshoot.jpg" class="img-fluid" alt="Premium Design 2">
-									<img src="images/template/screenshoot-3.jpg" class="img-fluid" alt="Premium Design 2">
+								<div class="product-image-slider ratio ratio-1x1">
+									<img src="/images/template/template-2.jpg" class="img-fluid" alt="Premium Design 2">
+									<img src="/images/template/template-2.jpg" class="img-fluid" alt="Premium Design 2">
 								</div>
-								<a href="detail-undangan.html" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
+								<a href="/theme/Termplate-2/index.html" target="_blank" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
 									<i class="bi bi-arrows-angle-expand"></i> Preview
 								</a>
 								</div>
@@ -434,23 +435,23 @@
 									<span class="text-muted small border-bottom">Pernikahan</span>
 								</div>
 								<h5 class="card-title mb-3">Koleksi Premium 002</h5>
-								<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dengan%20Koleksi%20Premium%20002" 
-									class="btn btn-primary w-100" target="_blank">
-									<i class="bi bi-whatsapp"></i> Pesan Sekarang
+								<a href="https://wa.me/6282117200692?text=UNTUK%20PEMESANAN%20GUNAKAN%20FORMAT%20DI%20BAWAH%20INI%21%0AHalo%20admin%2C%20saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Digital%20Dengan%20Tema%3A%20Koleksi%20Premium%20002%20Masa%20Tayang%3A%206%20Bulan.%20Harga%3A%20Rp150.000%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami.%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka.%20Terima%20kasih%21" 
+								class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center" target="_blank rel="noopener">
+								<i class="icon-whatsapp" style="margin-right: 5px!important;"></i> Pesan Sekarang
 								</a>
 								</div>
 							</div>
 							</div>
 
 							<!-- Product Item 3 - Premium Wedding -->
-							<div class="col-xl-4 col-md-6 product-item" data-category="premium wedding">
+							<div class="col-xl-4 col-md-6 product-item" data-category="premium wedding new">
 							<div class="card h-100 border-0 shadow-sm overflow-hidden">
 								<div class="position-relative">
-								<div class="product-image-slider ratio ratio-4x3">
-									<img src="images/template/screenshoot-1.jpg" class="img-fluid" alt="Premium Design 3">
-									<img src="images/template/screenshoot.jpg" class="img-fluid" alt="Premium Design 3">
+								<div class="product-image-slider ratio ratio-1x1">
+									<img src="/images/template/template-3.jpg" class="img-fluid" alt="Premium Design 3">
+									<img src="/images/template/template-3.jpg" class="img-fluid" alt="Premium Design 3">
 								</div>
-								<a href="detail-undangan.html" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
+								<a href="/theme/Template-3/index.html" target="_blank" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
 									<i class="bi bi-arrows-angle-expand"></i> Preview
 								</a>
 								</div>
@@ -460,9 +461,9 @@
 									<span class="text-muted small border-bottom">Pernikahan</span>
 								</div>
 								<h5 class="card-title mb-3">Koleksi Premium 003</h5>
-								<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dengan%20Koleksi%20Premium%20003" 
-									class="btn btn-primary w-100" target="_blank">
-									<i class="bi bi-whatsapp"></i> Pesan Sekarang
+								<a href="https://wa.me/6282117200692?text=UNTUK%20PEMESANAN%20GUNAKAN%20FORMAT%20DI%20BAWAH%20INI%21%0AHalo%20admin%2C%20saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Digital%20Dengan%20Tema%3A%20Koleksi%20Premium%20003%20Masa%20Tayang%3A%206%20Bulan.%20Harga%3A%20Rp150.000%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami.%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka.%20Terima%20kasih%21" 
+								class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center" target="_blank rel="noopener">
+								<i class="icon-whatsapp" style="margin-right: 5px!important;"></i> Pesan Sekarang
 								</a>
 								</div>
 							</div>
@@ -472,11 +473,11 @@
 							<div class="col-xl-4 col-md-6 product-item" data-category="regular wedding">
 							<div class="card h-100 border-0 shadow-sm overflow-hidden">
 								<div class="position-relative">
-								<div class="product-image-slider ratio ratio-4x3">
-									<img src="images/template/screenshoot-3.jpg" class="img-fluid" alt="Regular Design 1">
-									<img src="images/template/screenshoot.jpg" class="img-fluid" alt="Regular Design 1">
+								<div class="product-image-slider ratio ratio-1x1">
+									<img src="/images/template/template-4.jpg" class="img-fluid" alt="Regular Design 1">
+									<img src="/images/template/template-4.jpg" class="img-fluid" alt="Regular Design 1">
 								</div>
-								<a href="detail-undangan.html" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
+								<a href="/theme/Template-4/index.html" target="_blank" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
 									<i class="bi bi-arrows-angle-expand"></i> Preview
 								</a>
 								</div>
@@ -486,9 +487,9 @@
 									<span class="text-muted small border-bottom">Pernikahan</span>
 								</div>
 								<h5 class="card-title mb-3">Koleksi Regular 001</h5>
-								<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dengan%20Koleksi%20Regular%20001" 
-									class="btn btn-secondary w-100" target="_blank">
-									<i class="bi bi-whatsapp"></i> Pesan Sekarang
+								<a href="https://wa.me/6282117200692?text=UNTUK%20PEMESANAN%20GUNAKAN%20FORMAT%20DI%20BAWAH%20INI%21%0AHalo%20admin%2C%20saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Digital%20Dengan%20Tema%3A%20Koleksi%20Regular%20001%20Masa%20Tayang%3A%206%20Bulan.%20Harga%3A%20Rp150.000%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami.%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka.%20Terima%20kasih%21" 
+								class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center" target="_blank rel="noopener">
+								<i class="icon-whatsapp" style="margin-right: 5px!important;"></i> Pesan Sekarang
 								</a>
 								</div>
 							</div>
@@ -498,11 +499,11 @@
 							<div class="col-xl-4 col-md-6 product-item" data-category="regular wedding">
 							<div class="card h-100 border-0 shadow-sm overflow-hidden">
 								<div class="position-relative">
-								<div class="product-image-slider ratio ratio-4x3">
-									<img src="images/template/screenshoot.jpg" class="img-fluid" alt="Regular Design 2">
-									<img src="images/template/screenshoot-3.jpg" class="img-fluid" alt="Regular Design 2">
+								<div class="product-image-slider ratio ratio-1x1">
+									<img src="/images/template/template-5.jpg" class="img-fluid" alt="Regular Design 2">
+									<img src="/images/template/template-5.jpg" class="img-fluid" alt="Regular Design 2">
 								</div>
-								<a href="detail-undangan.html" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
+								<a href="/theme/Template-5/index.html" target="_blank" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
 									<i class="bi bi-arrows-angle-expand"></i> Preview
 								</a>
 								</div>
@@ -512,9 +513,9 @@
 									<span class="text-muted small border-bottom">Pernikahan</span>
 								</div>
 								<h5 class="card-title mb-3">Koleksi Regular 002</h5>
-								<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dengan%20Koleksi%20Regular%20002" 
-									class="btn btn-secondary w-100" target="_blank">
-									<i class="bi bi-whatsapp"></i> Pesan Sekarang
+								<a href="https://wa.me/6282117200692?text=UNTUK%20PEMESANAN%20GUNAKAN%20FORMAT%20DI%20BAWAH%20INI%21%0AHalo%20admin%2C%20saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Digital%20Dengan%20Tema%3A%20Koleksi%20Regular%20002%20Masa%20Tayang%3A%206%20Bulan.%20Harga%3A%20Rp150.000%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami.%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka.%20Terima%20kasih%21" 
+								class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center" target="_blank rel="noopener">
+								<i class="icon-whatsapp" style="margin-right: 5px!important;"></i> Pesan Sekarang
 								</a>
 								</div>
 							</div>
@@ -524,11 +525,11 @@
 							<div class="col-xl-4 col-md-6 product-item" data-category="regular wedding">
 							<div class="card h-100 border-0 shadow-sm overflow-hidden">
 								<div class="position-relative">
-								<div class="product-image-slider ratio ratio-4x3">
-									<img src="images/template/screenshoot-1.jpg" class="img-fluid" alt="Regular Design 3">
-									<img src="images/template/screenshoot.jpg" class="img-fluid" alt="Regular Design 3">
+								<div class="product-image-slider ratio ratio-1x1">
+									<img src="/images/template/template-6.jpg" class="img-fluid" alt="Regular Design 3">
+									<img src="/images/template/template-6.jpg" class="img-fluid" alt="Regular Design 3">
 								</div>
-								<a href="detail-undangan.html" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
+								<a href="/theme/Template-6/index.html" target="_blank" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
 									<i class="bi bi-arrows-angle-expand"></i> Preview
 								</a>
 								</div>
@@ -538,9 +539,9 @@
 									<span class="text-muted small border-bottom">Pernikahan</span>
 								</div>
 								<h5 class="card-title mb-3">Koleksi Regular 003</h5>
-								<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dengan%20Koleksi%20Regular%20003" 
-									class="btn btn-secondary w-100" target="_blank">
-									<i class="bi bi-whatsapp"></i> Pesan Sekarang
+								<a href="https://wa.me/6282117200692?text=UNTUK%20PEMESANAN%20GUNAKAN%20FORMAT%20DI%20BAWAH%20INI%21%0AHalo%20admin%2C%20saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Digital%20Dengan%20Tema%3A%20Koleksi%20Regular%20003%20Masa%20Tayang%3A%206%20Bulan.%20Harga%3A%20Rp150.000%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami.%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka.%20Terima%20kasih%21" 
+								class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center" target="_blank rel="noopener">
+								<i class="icon-whatsapp" style="margin-right: 5px!important;"></i> Pesan Sekarang
 								</a>
 								</div>
 							</div>
@@ -550,11 +551,11 @@
 							<div class="col-xl-4 col-md-6 product-item" data-category="custom wedding">
 							<div class="card h-100 border-0 shadow-sm overflow-hidden">
 								<div class="position-relative">
-								<div class="product-image-slider ratio ratio-4x3">
-									<img src="images/template/screenshoot-3.jpg" class="img-fluid" alt="Custom Design 1">
-									<img src="images/template/screenshoot.jpg" class="img-fluid" alt="Custom Design 1">
+								<div class="product-image-slider ratio ratio-1x1">
+									<img src="/images/template/template-7.jpg" class="img-fluid" alt="Custom Design 1">
+									<img src="/images/template/template-7.jpg" class="img-fluid" alt="Custom Design 1">
 								</div>
-								<a href="detail-undangan.html" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
+								<a href="/theme/Template-7/index.html" target="_blank" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
 									<i class="bi bi-arrows-angle-expand"></i> Preview
 								</a>
 								</div>
@@ -564,9 +565,9 @@
 									<span class="text-muted small border-bottom">Pernikahan</span>
 								</div>
 								<h5 class="card-title mb-3">Koleksi Custom 001</h5>
-								<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dengan%20Koleksi%20Custom%20001" 
-									class="btn btn-info w-100 text-white" target="_blank">
-									<i class="bi bi-whatsapp"></i> Pesan Sekarang
+								<a href="https://wa.me/6282117200692?text=UNTUK%20PEMESANAN%20GUNAKAN%20FORMAT%20DI%20BAWAH%20INI%21%0AHalo%20admin%2C%20saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Digital%20Dengan%20Tema%3A%20Koleksi%20Custom%20001%20Masa%20Tayang%3A%206%20Bulan.%20Harga%3A%20Rp150.000%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami.%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka.%20Terima%20kasih%21" 
+								class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center" target="_blank rel="noopener">
+								<i class="icon-whatsapp" style="margin-right: 5px!important;"></i> Pesan Sekarang
 								</a>
 								</div>
 							</div>
@@ -576,11 +577,11 @@
 							<div class="col-xl-4 col-md-6 product-item" data-category="custom wedding">
 							<div class="card h-100 border-0 shadow-sm overflow-hidden">
 								<div class="position-relative">
-								<div class="product-image-slider ratio ratio-4x3">
-									<img src="images/template/screenshoot.jpg" class="img-fluid" alt="Custom Design 2">
-									<img src="images/template/screenshoot-3.jpg" class="img-fluid" alt="Custom Design 2">
+								<div class="product-image-slider ratio ratio-1x1">
+									<img src="/images/template/template-8.jpg" class="img-fluid" alt="Custom Design 2">
+									<img src="/images/template/template-8.jpg" class="img-fluid" alt="Custom Design 2">
 								</div>
-								<a href="detail-undangan.html" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
+								<a href="/theme/Template-8/index.html" target="_blank" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
 									<i class="bi bi-arrows-angle-expand"></i> Preview
 								</a>
 								</div>
@@ -590,9 +591,9 @@
 									<span class="text-muted small border-bottom">Pernikahan</span>
 								</div>
 								<h5 class="card-title mb-3">Koleksi Custom 002</h5>
-								<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dengan%20Koleksi%20Custom%20002" 
-									class="btn btn-info w-100 text-white" target="_blank">
-									<i class="bi bi-whatsapp"></i> Pesan Sekarang
+								<a href="https://wa.me/6282117200692?text=UNTUK%20PEMESANAN%20GUNAKAN%20FORMAT%20DI%20BAWAH%20INI%21%0AHalo%20admin%2C%20saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Digital%20Dengan%20Tema%3A%20Koleksi%20Custom%20002%20Masa%20Tayang%3A%206%20Bulan.%20Harga%3A%20Rp150.000%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami.%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka.%20Terima%20kasih%21" 
+								class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center" target="_blank rel="noopener">
+								<i class="icon-whatsapp" style="margin-right: 5px!important;"></i> Pesan Sekarang
 								</a>
 								</div>
 							</div>
@@ -602,11 +603,11 @@
 							<div class="col-xl-4 col-md-6 product-item" data-category="custom wedding">
 							<div class="card h-100 border-0 shadow-sm overflow-hidden">
 								<div class="position-relative">
-								<div class="product-image-slider ratio ratio-4x3">
-									<img src="images/template/screenshoot-1.jpg" class="img-fluid" alt="Custom Design 3">
-									<img src="images/template/screenshoot.jpg" class="img-fluid" alt="Custom Design 3">
+								<div class="product-image-slider ratio ratio-1x1">
+									<img src="/images/template/template-9.jpg" class="img-fluid" alt="Custom Design 3">
+									<img src="/images/template/template-9.jpg" class="img-fluid" alt="Custom Design 3">
 								</div>
-								<a href="detail-undangan.html" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
+								<a href="/theme/Template-9/index.html" target="_blank" class="btn btn-sm btn-light position-absolute top-0 end-0 m-2">
 									<i class="bi bi-arrows-angle-expand"></i> Preview
 								</a>
 								</div>
@@ -616,9 +617,9 @@
 									<span class="text-muted small border-bottom">Pernikahan</span>
 								</div>
 								<h5 class="card-title mb-3">Koleksi Custom 003</h5>
-								<a href="https://wa.me/6282117200692?text=Halo%20admin%2C%20Saya%20tertarik%20dengan%20Koleksi%20Custom%20003" 
-									class="btn btn-info w-100 text-white" target="_blank">
-									<i class="bi bi-whatsapp"></i> Pesan Sekarang
+								<a href="https://wa.me/6282117200692?text=UNTUK%20PEMESANAN%20GUNAKAN%20FORMAT%20DI%20BAWAH%20INI%21%0AHalo%20admin%2C%20saya%20tertarik%20dan%20ingin%20memesan%20Undangan%20Digital%20Dengan%20Tema%3A%20Koleksi%20Custom%20003%20Masa%20Tayang%3A%206%20Bulan.%20Harga%3A%20Rp150.000%20Tema%20ini%20sangat%20cocok%20dengan%20kesan%20dan%20gaya%20pernikahan%20kami.%20Mohon%20bantuannya%20untuk%20mengirimkan%20form%20order%20kepada%20saya%20ya%20ka.%20Terima%20kasih%21" 
+								class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center" target="_blank" rel="noopener">
+								<i class="icon-whatsapp" style="margin-right: 5px!important;"></i> Pesan Sekarang
 								</a>
 								</div>
 							</div>
@@ -756,7 +757,7 @@
 					</div>
 				</div>
 
-				<div class="section mt-0 mb-0" style="padding: 80px 0">
+				<div class="section mt-0 mb-0" style="padding: 80px 0" id="contact">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-md-3 col-sm-6">
@@ -821,6 +822,48 @@
 
 			</div>
 		</section><!-- #content end -->
+
+		<div class="mobile-bottom-nav d-md-none d-flex align-items-center justify-content-around shadow fixed-bottom bg-primary mb-3 rounded-pill">
+			<a href="#" class="d-flex align-items-center justify-content-center fw-bold pt-0 pb-0 pt-3 mb-3">
+				<i class="bi bi-layout-text-window-reverse fs-4"></i><br>
+				<span><i class="icon-home" title="Beranda"></i></span>
+			</a>
+			<a href="#template" class="d-flex align-items-center justify-content-center fw-bold pt-0 pb-0 pt-3 mb-3">
+				<i class="bi bi-tags fs-4"></i><br>
+				<span><i class="icon-th""></i></span>
+			</a>
+			<a href="#about" class="d-flex align-items-center justify-content-center fw-bold pt-0 pb-0 pt-3 mb-3">
+				<i class="bi bi-info-circle fs-4"></i><br>
+				<span><i class="icon-info"></i></span>
+			</a>
+			<a href="#contact" class="d-flex align-items-center justify-content-center fw-bold pt-0 pb-0 pt-3 mb-3">
+				<i class="bi bi-envelope fs-4"></i><br>
+				<span><i class="icon-call"></i></span>
+			</a>
+		</div>
+
+		<style>
+			.mobile-bottom-nav a {
+				text-decoration: none;
+				flex: 1;
+				text-align: center;
+				color: #fff;
+			}
+
+			.mobile-bottom-nav a.hovered {
+				color: #fff;
+			}
+
+			.mobile-bottom-nav a.not-hovered {
+				color: #1b8872;
+			}
+
+			.mobile-bottom-nav a.active {
+			background-color: #000;
+			color: #fff !important;
+			border-radius: 50px;
+			}
+		</style>
 
 		<!-- Footer
 		============================================= -->
@@ -940,6 +983,54 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+
+	<script>
+		const navLinks = document.querySelectorAll('.mobile-bottom-nav a');
+
+		navLinks.forEach(link => {
+			link.addEventListener('mouseenter', () => {
+			navLinks.forEach(l => {
+				if (l !== link) {
+				l.classList.add('not-hovered');
+				l.classList.remove('hovered');
+				} else {
+				l.classList.add('hovered');
+				l.classList.remove('not-hovered');
+				}
+			});
+			});
+
+			link.addEventListener('mouseleave', () => {
+			navLinks.forEach(l => {
+				l.classList.remove('hovered');
+				l.classList.remove('not-hovered');
+			});
+			});
+		});
+
+		document.addEventListener('DOMContentLoaded', function () {
+			const sections = document.querySelectorAll('*[id]');
+			const navLinks = document.querySelectorAll('.mobile-bottom-nav a');
+
+			window.addEventListener('scroll', () => {
+			let current = '';
+
+			sections.forEach(section => {
+				const sectionTop = section.offsetTop - 80;
+				if (pageYOffset >= sectionTop) {
+				current = section.getAttribute('id');
+				}
+			});
+
+			navLinks.forEach(link => {
+				link.classList.remove('active');
+				if (link.getAttribute('href') === `#${current}`) {
+				link.classList.add('active');
+				}
+			});
+			});
+		});
+	</script>
 
 	<script>
 		$(document).ready(changeHeaderColor);
